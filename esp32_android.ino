@@ -18,8 +18,8 @@ const int resolution = 10; // this determines the pwm range, is specified in bit
 
 // WiFi network name and password:
 // substitute with the appropriate network properties where it is used
-const char* ssid = "szauronszeme";
-const char* password = "herbalherbal";
+const char* ssid = "network_name";
+const char* password = "network_password";
 
 WiFiServer wifiServer(80);
 
