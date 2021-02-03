@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:versionCode="1"
+        android:versionName="1.0"
+        android:compileSdkVersion="30"
+        android:compileSdkVersionCodename="11"
+        package="com.example.test_emptybased_reboot_rc">
+        platformBuildVersionCode="30"
+        platformBuildVersionName="11">
+
+        <uses-sdk
+            android:minSdkVersion="18"
+            android:targetSdkVersion="30" />
+
+        <uses-feature
+            android:name="android.hardware.Sensor"
+            android:required="false" />
+
+        <uses-permission
+            android:name="android.permission.INTERNET" />
+
+        <uses-permission
+            android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+        <application
+            android:theme="@style/Theme.AppCompat.Light">
+            android:label="@ref/0x7f0e001b"
+            android:icon="@ref/0x7f07006e"
+            android:debuggable="true"
+            android:allowBackup="true"
+            android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+            <activity
+                android:name="com.example.test_emptybased_reboot_rc.SensorActivity" />
+
+            <activity
+                android:label="test_emptyBased_reboot_rc"
+                android:name="com.example.test_emptybased_reboot_rc.MainActivity">
+
+                <intent-filter>
+
+                    <action
+                        android:name="android.intent.action.MAIN" />
+
+                    <category
+                        android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+        </application>
+    </manifest>
